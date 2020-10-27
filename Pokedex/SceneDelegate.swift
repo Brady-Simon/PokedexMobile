@@ -13,10 +13,28 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        guard let splitViewController = window?.rootViewController
+            as? UISplitViewController else {
+                fatalError("SplitViewController not set up properly.")
+        }
+        guard let leftNavController = splitViewController.viewController(for: .primary)
+            as? UINavigationController else {
+            fatalError("NavigationController not set up properly.")
+        }
+        guard let masterViewController = leftNavController.viewControllers.first
+            as? MasterViewController else {
+            fatalError("MasterViewController not set up properly.")
+        }
+        guard let detailViewController = splitViewController.viewController(for: .secondary) as? DetailViewController else {
+            fatalError("DetailViewController not set up properly.")
+        }
+        
+        masterViewController.pokemonDelegate = detailViewController
+        let pokemon = masterViewController.pokemonList.first
+        detailViewController.pokemon = pokemon
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

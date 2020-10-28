@@ -19,6 +19,8 @@
 		CA6575DC2548C917000A52B8 /* PokemonSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6575DB2548C917000A52B8 /* PokemonSelectionDelegate.swift */; };
 		CA6575E02548DAA4000A52B8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6575DF2548DAA4000A52B8 /* NetworkManager.swift */; };
 		CA6575E42548DCA8000A52B8 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6575E32548DCA8000A52B8 /* NetworkError.swift */; };
+		CA8518B62549B9E800E81DF4 /* PokemonResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8518B52549B9E800E81DF4 /* PokemonResource.swift */; };
+		CA8518B92549BA5100E81DF4 /* PokeUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8518B82549BA5100E81DF4 /* PokeUrl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		CA6575DB2548C917000A52B8 /* PokemonSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonSelectionDelegate.swift; sourceTree = "<group>"; };
 		CA6575DF2548DAA4000A52B8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CA6575E32548DCA8000A52B8 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CA8518B52549B9E800E81DF4 /* PokemonResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonResource.swift; sourceTree = "<group>"; };
+		CA8518B82549BA5100E81DF4 /* PokeUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeUrl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 				CA6575BF2548A501000A52B8 /* ViewController.swift */,
 				CA6575D72548AC1A000A52B8 /* Pokemon.swift */,
 				CA6575DB2548C917000A52B8 /* PokemonSelectionDelegate.swift */,
+				CA8518B52549B9E800E81DF4 /* PokemonResource.swift */,
+				CA8518B82549BA5100E81DF4 /* PokeUrl.swift */,
 				CA6575E22548DC9D000A52B8 /* Network */,
 				CA6575D42548AA4E000A52B8 /* DetailViewController.swift */,
 				CA6575C12548A501000A52B8 /* Main.storyboard */,
@@ -168,10 +174,12 @@
 				CA6575C02548A501000A52B8 /* ViewController.swift in Sources */,
 				CA6575D52548AA4E000A52B8 /* DetailViewController.swift in Sources */,
 				CA6575E02548DAA4000A52B8 /* NetworkManager.swift in Sources */,
+				CA8518B92549BA5100E81DF4 /* PokeUrl.swift in Sources */,
 				CA6575BC2548A501000A52B8 /* AppDelegate.swift in Sources */,
 				CA6575E42548DCA8000A52B8 /* NetworkError.swift in Sources */,
 				CA6575BE2548A501000A52B8 /* SceneDelegate.swift in Sources */,
 				CA6575D82548AC1A000A52B8 /* Pokemon.swift in Sources */,
+				CA8518B62549B9E800E81DF4 /* PokemonResource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

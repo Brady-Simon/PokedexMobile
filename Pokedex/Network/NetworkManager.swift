@@ -9,7 +9,7 @@ import Foundation
 
 struct NetworkManager {
     
-    static func load<T: Decodable>(url: URL, completion: @escaping (Result<T, NetworkError>) -> Void) {
+    static func load<T: Decodable>(url: URL, type: T.Type, completion: @escaping (Result<T, NetworkError>) -> Void) {
         if let data = try? Data(contentsOf: url) {
             let decoder = JSONDecoder()
             if let decodedData = try? decoder.decode(T.self, from: data) {
@@ -22,6 +22,19 @@ struct NetworkManager {
         } else {
             completion(.failure(.unavailable))
             return
+        }
+    }
+    
+    static func load<T: Decodable>(url: URL, type: T.Type) -> Result<T, NetworkError> {
+        if let data = try? Data(contentsOf: url) {
+            let decoder = JSONDecoder()
+            if let decodedData = try? decoder.decode(T.self, from: data) {
+                return .success(decodedData)
+            } else {
+                return .failure(.decodingFailure)
+            }
+        } else {
+            return .failure(.unavailable)
         }
     }
     

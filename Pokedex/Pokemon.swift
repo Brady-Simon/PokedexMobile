@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Pokemon: Codable {
+/// A pokemon that can be displayed on-screen.
+struct Pokemon: Codable, Hashable {
     
     var id: Int
     var name: String

@@ -24,6 +24,9 @@ class MasterViewController: UITableViewController {
         updatePokedex()
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(updatePokedex))
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.barTintColor = .systemRed
     }
 
     // MARK: - Table view data source

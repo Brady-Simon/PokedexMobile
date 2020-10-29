@@ -79,12 +79,10 @@
 				CA6575BB2548A501000A52B8 /* AppDelegate.swift */,
 				CA6575BD2548A501000A52B8 /* SceneDelegate.swift */,
 				CA6575BF2548A501000A52B8 /* ViewController.swift */,
-				CA6575D72548AC1A000A52B8 /* Pokemon.swift */,
+				CA8518C32549FE3C00E81DF4 /* Models */,
 				CA6575DB2548C917000A52B8 /* PokemonSelectionDelegate.swift */,
 				CA8518BF2549BB0200E81DF4 /* Section.swift */,
-				CA8518B52549B9E800E81DF4 /* PokemonResource.swift */,
 				CA8518BC2549BAF400E81DF4 /* PokedexStorage.swift */,
-				CA8518B82549BA5100E81DF4 /* PokeUrl.swift */,
 				CA6575E22548DC9D000A52B8 /* Network */,
 				CA6575D42548AA4E000A52B8 /* DetailViewController.swift */,
 				CA6575C12548A501000A52B8 /* Main.storyboard */,
@@ -103,6 +101,16 @@
 				CA6575E32548DCA8000A52B8 /* NetworkError.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		CA8518C32549FE3C00E81DF4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA6575D72548AC1A000A52B8 /* Pokemon.swift */,
+				CA8518B82549BA5100E81DF4 /* PokeUrl.swift */,
+				CA8518B52549B9E800E81DF4 /* PokemonResource.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

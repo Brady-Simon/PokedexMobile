@@ -23,6 +23,7 @@
 		CA8518B92549BA5100E81DF4 /* PokeUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8518B82549BA5100E81DF4 /* PokeUrl.swift */; };
 		CA8518BD2549BAF400E81DF4 /* PokedexStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8518BC2549BAF400E81DF4 /* PokedexStorage.swift */; };
 		CA8518C02549BB0200E81DF4 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8518BF2549BB0200E81DF4 /* Section.swift */; };
+		CADABF5E254A3F9100520E47 /* PokedexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADABF5D254A3F9100520E47 /* PokedexTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		CA8518B82549BA5100E81DF4 /* PokeUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeUrl.swift; sourceTree = "<group>"; };
 		CA8518BC2549BAF400E81DF4 /* PokedexStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexStorage.swift; sourceTree = "<group>"; };
 		CA8518BF2549BB0200E81DF4 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		CADABF5D254A3F9100520E47 /* PokedexTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				CA6575DB2548C917000A52B8 /* PokemonSelectionDelegate.swift */,
 				CA8518BF2549BB0200E81DF4 /* Section.swift */,
 				CA8518BC2549BAF400E81DF4 /* PokedexStorage.swift */,
+				CADABF5D254A3F9100520E47 /* PokedexTableViewCell.swift */,
 				CA6575E22548DC9D000A52B8 /* Network */,
 				CA6575D42548AA4E000A52B8 /* DetailViewController.swift */,
 				CA6575C12548A501000A52B8 /* Main.storyboard */,
@@ -195,6 +198,7 @@
 				CA8518BD2549BAF400E81DF4 /* PokedexStorage.swift in Sources */,
 				CA6575BE2548A501000A52B8 /* SceneDelegate.swift in Sources */,
 				CA6575D82548AC1A000A52B8 /* Pokemon.swift in Sources */,
+				CADABF5E254A3F9100520E47 /* PokedexTableViewCell.swift in Sources */,
 				CA8518B62549B9E800E81DF4 /* PokemonResource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

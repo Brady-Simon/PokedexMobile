@@ -73,8 +73,13 @@ private extension MasterViewController {
         let dataSource = DataSource(
             tableView: tableView,
             cellProvider: { (tableView, indexPath, pokemon) -> UITableViewCell? in
-                let cell = tableView.dequeueReusableCell(withIdentifier: "PokedexCell", for: indexPath)
-                cell.textLabel?.text = "\(indexPath.row + 1): \(pokemon.name)"
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: "PokedexCell", for: indexPath) as? PokedexTableViewCell else { return nil }
+                cell.pokemonName.text = "\(indexPath.row + 1): \(pokemon.name)"
+                DispatchQueue.main.async {
+                    if let url = pokemon.imageUrl, let data = try? Data(contentsOf: url) {
+                        cell.pokemonImageView.image = UIImage(data: data)
+                    }
+                }
                 return cell
             }
         )
